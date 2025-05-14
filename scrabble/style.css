@@ -1,0 +1,181 @@
+/* Import fonts */
+
+@font-face {
+    src: url('font/interstate.ttf');
+    font-family: 'Interstate';
+}
+
+@font-face {
+    src: url('font/news-gothic.ttf');
+    font-family: 'News Gothic';
+}
+
+html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+/* Board styling */
+
+table.board {
+    margin: auto;
+    border-radius: 1%;
+    border-spacing: 5px;
+}
+
+table.board td {
+    border-radius: 10%;
+    padding: 0px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
+
+/* Bonus styling */
+
+table.board td:before {
+    font-size: small;
+    line-height: 2em;
+    font-family: 'Interstate';
+}
+
+table.board td.dl:before {
+    content: "DL";
+}
+
+table.board td.dw:before {
+    content: "DW";
+}
+
+table.board td.tl:before {
+    content: "TL";
+}
+
+table.board td.tw:before {
+    content: "TW";
+}
+
+/* Light theme board styling */
+
+body.light {
+    background-color: #d54a36;
+}
+
+body.light table.board {
+    background-color: #f4f1e8;
+}
+
+body.light table.board td {
+    background-color: #e4dbd2;
+}
+
+body.light table.board td:before {
+    color: #f4f1e8;
+}
+
+body.light table.board td.dl {
+    background-color: #88aacd;
+}
+
+body.light table.board td.dw {
+    background-color: #c27c0d;
+}
+
+body.light table.board td.tl {
+    background-color: #305fac;
+}
+
+body.light table.board td.tw {
+    background-color: #c0352c;
+}
+
+/* Dark theme board styling */
+
+body.dark {
+    background-color: #3c3836;
+}
+
+body.dark table.board {
+    background-color: #282828;
+}
+
+body.dark table.board td {
+    border: 1px solid #a89984;
+}
+
+body.dark table.board td:before {
+    color: #fbf1c7
+}
+
+body.dark table.board td.dl {
+    background-color: #458588;
+}
+
+body.dark table.board td.dw {
+    background-color: #cc241d;
+}
+
+body.dark table.board td.tl {
+    background-color: #83a598;
+}
+
+body.dark table.board td.tw {
+    background-color: #fb4934;
+}
+
+/* Tile container styling */
+
+table.container {
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 4px;
+    border-spacing: 5px;
+}
+
+table.container td {
+    border-radius: 5%;
+    padding: 0px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
+
+/* Light theme tile container styling */
+
+body.light table.container {
+    background-color: #f4f1e8;
+}
+
+body.light table.container td {
+    background-color: #e4dbd2;
+}
+
+/* Dark theme container styling */
+
+body.dark table.container {
+    background-color: #f4f1e8;
+}
+
+body.dark table.container td {
+    background-color: #e4dbd2;
+}
+
+/* Tile styling */
+
+div.tile {
+    display: table;
+    border-radius: 5%;
+    background-color: #eec6a0;
+    width: 2em;
+    height: 2em;
+    color: #000000;
+    font-family: 'News Gothic';
+    user-select: none;
+    text-align: center;
+}
